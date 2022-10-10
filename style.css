@@ -1,0 +1,235 @@
+* body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #BFD7E4;
+  font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 465px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #293241;
+}
+
+.page {
+  width:750px;
+  margin: auto;
+}
+
+h1, legend {
+  font-family: 'Staatliches', sans-serif;
+}
+
+header h1 {
+  margin: 90px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  line-height: 45px;
+  color: #FFFFFF;
+
+}
+
+header p {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+header img {
+  margin: 40px auto 32px auto;
+  display: flex;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 34px;  
+  color: #FFFFFF;
+}
+
+.top {
+  background: #F67669;
+  border-radius: 20px 20px 0 0;
+  padding: 50px 275px;
+}
+
+form {
+  background: #FFFFFF;
+  border-radius: 0 0 20px 20px;
+  padding: 30px 64px 64px 64px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+fieldset legend {
+  font-size: 24px;
+  line-height: 34px;
+  color: #253B51;
+  width: 100%;
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 8px;
+}
+
+.input-wrapper label {
+  color: #4E4958;
+  font-size: 14px;
+  line-height: 24px; 
+}
+
+.input-name {
+  display: flex;
+  gap: 22px;
+}
+
+.input-name .input-wrapper {
+  width: 100%; 
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+
+.input-wrapper span {
+  margin-left: 9px;
+  color: #C1BCCC;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.input-wrapper span:hover {
+ color: #777381
+}
+
+.input-wrapper input, 
+.input-wrapper select, 
+.input-wrapper textarea {
+  height: 55px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  background: #FAFAFC;
+  display: flex;
+  padding-left: 10px;
+  color: #4E4958;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+}
+
+.input-wrapper select {
+  flex-direction: row;
+  width: 50%;
+  appearance: none;
+  -webkit-appearance: none; 
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+}
+
+.input-wrapper select {
+  cursor: pointer;
+  justify-content: center;
+}
+
+.input-wrapper textarea {
+  height: 166px;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_703_20)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_703_20'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+
+.date-time {
+  display: flex;
+  gap: 20px;
+}
+
+.date-time > div:nth-child(1) {
+  width: 290px;
+}
+.date-time > div:nth-child(2) {
+  width: 139px;
+}
+.date-time > div:nth-child(3) {
+  width: 139px;
+}
+
+button {
+  height: 51px;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #F67669;
+  border: none;
+  color: #FFFFFF;
+}
+
+button:hover {
+  background: #f35c4c;
+  cursor: pointer;
+}
