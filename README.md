@@ -1,4 +1,4 @@
-# Projeto 6 
+# Formulário 03
 
 ![preview](./.github/preview.png)
 
@@ -6,7 +6,7 @@
 
 Projeto desenvolvido durante o curso Explorer da Rocketseat, ao final do módulo de formulários, validações e customizações, como desafio. 
 
-[Clique aqui para acessar](https://desenvjonathan.github.io/projeto06/)
+[Clique aqui para acessar](https://desenvjonathan.github.io/form03/)
 
 ## Tecnologias
 
